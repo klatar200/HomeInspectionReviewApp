@@ -4,7 +4,7 @@
 Review + discovery site for residential home inspectors within 50mi of Plainfield IL (D-015), first audience=new-build buyers. Reviews can target an inspector OR a builder (D-023); reviewed party can challenge, decided case-by-case. Headline trust signal = transparent evidence counts, stars secondary (D-028). Differentiators: structured/evidence-backed reviews; builder-conflict flags (evidence-only, D-008); private second-opinion comparison. ✗pay-to-rank EVER (D-007).
 
 ## Design notes
-Journeys (D-034): A builder researcher (pre-commit; searches builder/neighborhood) · B budget buyer (wants inspector who holds builder accountable; filters by new-construction services: pre-drywall / final / 11-month warranty / resale, self-declared at claim). Builder-page trust signals analogous to D-028 (counts, not a black-box score) = TBD.
+Journeys (D-034): A builder researcher (pre-commit; searches builder/neighborhood) · B budget buyer (wants inspector who holds builder accountable; filters by new-construction services: pre-drywall / final / 11-month warranty / resale, self-declared at claim; sample report optional, D-036). Builder-page trust signals analogous to D-028 (counts, not a black-box score) = TBD.
 Primary entry = post-burn users (D-030). Builder due-diligence beyond reviews (deposit loss, litigation) NOT in scope pending D-031.
 
 ## Scope v1 (IN)
@@ -14,12 +14,12 @@ calendar sync (D-006) · payments/lead-gen (D-011) · mobile app · public secon
 
 ## Data (Prisma/Postgres; every row scoped; ✗client-supplied identity — userId from session only)
 - User(id,email,role[buyer|inspector|admin],createdAt)
-- Inspector(id,kind[individual|entity],displayName,idfprLicenseNo UNIQUE,licenseStatus,origIssueDate,expirationDate,city,state,zip(server-only),lat,lng,everDisciplined,source='idfpr',sourceSyncedAt,bookingUrl?,claimedByUserId?,status[unclaimed|claimed|removed])
+- Inspector(id,kind[individual|entity],displayName,idfprLicenseNo UNIQUE,licenseStatus,origIssueDate,expirationDate,city,state,zip(server-only),lat,lng,everDisciplined,source='idfpr',sourceSyncedAt,bookingUrl?,services[pre_drywall|final_preclose|warranty_11mo|warranty_2yr|resale] (self-declared),companyName? (self-reported),sampleReportKey?,sampleRedactionConfirmed bool,claimedByUserId?,status[unclaimed|claimed|removed])
 - LicenseDiscipline(id,inspectorId,caseNumber,action,reason,startDate,endDate)  — verbatim from IDFPR, many per Inspector
 - Community(id,name,city,state,createdByUserId,status[active|merged|removed],mergedIntoId?)  — a residential neighborhood/subdivision; user-created, admin-merged (D-034 PROPOSED); many-to-many with Builder
 - Builder(id,name,aliases[],region,claimedByUserId?,createdByUserId,status[active|merged|removed],mergedIntoId?)  — created by reviewers; admin merges dupes; claim=company-email verification
 - Dispute(id,reviewId,raisedByUserId,raisedByRole[inspector|builder],reason[factually_false|no_relationship|policy_violation|other],statement,evidenceIds[],status[open|upheld_kept|removed|annotated],decisionNote,decidedByAdminId?,openedAt,decidedAt?)  — reviewer notified, can respond; decision logged in ModerationAction
-- Review(id,authorId,targetType[inspector|builder],inspectorId?,builderId?,communityId?,builderStage?[pre_construction|under_construction|closed],builderStatus?[delivered|delayed|not_started|contract_cancelled],reviewerRelationship[hired_inspector|bought_from_builder|other],inspectionType[pre_close|10day_post|11mo_warranty|resale|other],inspectedOn,hoursOnSite?,defectsReported?,accessRestricted?bool,reportUploaded bool,rating 1-5,body,tier[unverified|report_attached],status[pending|published|removed],createdAt)  — fields neutral; NO leading prompts (RESEARCH §4 Sec.230)
+- Review(id,authorId,targetType[inspector|builder],inspectorId?,builderId?,communityId?,builderStage?[pre_construction|under_construction|closed],builderStatus?[delivered|delayed|not_started|contract_cancelled],reviewerRelationship[hired_inspector|bought_from_builder|other],inspectionType[pre_drywall|final_preclose|10day_post|warranty_11mo|warranty_2yr|resale|other],inspectedOn,hoursOnSite?,defectsReported?,accessRestricted?bool,reportUploaded bool,rating 1-5,body,tier[unverified|report_attached],status[pending|published|removed],createdAt)  — fields neutral; NO leading prompts (RESEARCH §4 Sec.230)
 - Evidence(id,ownerId,reviewId?|flagId?,fileKey,mime,sha256,createdAt)  — private bucket, signed URLs
 - BuilderFlag(id,builderId,type[access_restricted|steered_inspector|disparaged_inspector],evidenceIds[≥1 REQUIRED],authorId,status,createdAt)
 - SecondOpinion(id,ownerId,priorReportKey,laterReportKey,notes) — PRIVATE to owner only (D-005)
@@ -76,7 +76,7 @@ W7 Admin moderation queue: pending reviews/flags, open challenges (oldest first,
 - [ ] P4 Builders (W4): user-created builder pages + admin merge + builder claim + reviews of builders + evidence-required flags.
 - [ ] P5 Inspector claim/dashboard (W6) + booking link-out.
 - [ ] P6 Second-opinion private (W5).
-- [ ] P7 Seed from IDFPR open data (see Seed plan) + local audit of builders (RESEARCH §3 gap).
+- [ ] P7 Seed from IDFPR open data (see Seed plan). Builders/communities: hand-curated starter list w/ source URL+date, facts only, no reviews (D-035; RESEARCH §7) — curation task NOT started.
 - [ ] P8 Deploy ($0 stack verified ToS-for-commercial-use first; D-010) + pilot.
 
 ## Gates (PROPOSED, NOT AGREED — D-012; agent restates every check-in)

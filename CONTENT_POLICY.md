@@ -52,3 +52,4 @@ No paid placement and no pay-to-rank, ever. Profiles are free. [PLAN D-007]
 11. Moderator conflicts: sole founder as only decision-maker — disclosures or process changes advisable?
 12. Any Illinois or federal licensing or advertising rules for a site that rates licensed professionals?
 13. Structured builder-review status fields (home delivered / delayed / construction not started / contract cancelled; stage): are these neutral enough under the Section 230 participation concern, and are there wording changes you'd advise?
+14. Inspector-provided sample reports: copyright/ownership, client-PII redaction duty, and how to label so it is not mistaken for a real client report.
