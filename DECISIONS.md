@@ -26,3 +26,4 @@ D-023 2026-10-13 DECIDED reviews may target EITHER an inspector OR a builder. Re
 D-024 2026-10-13 DECIDED challenge process in CONTENT_POLICY.md §5 adopted as working v0.1 (7d reviewer response, 14d decision, keep-visible-unless-facially-violating, 1 appeal); Keagan will alter after counsel feedback. Closes PLAN Q-3.
 D-025 2026-10-13 DECIDED builder claim verification v1=company-email domain. Downside: free-mail/shared domains ⇒ manual check fallback. Closes PLAN Q-4.
 D-026 2026-10-13 DECIDED first social channel=Facebook (groups/pages/community posts). Refines D-019. Account owner + content plan OPEN. ToS/spam rules of target groups ✗checked ⇒ read each group's rules before posting.
+D-027 2026-10-13 DECIDED Facebook account/owner (D-026) and counsel selection/cost (D-021) are DEFERRED until the app is near launch (PLAN P8 / G2). Agent asked too early; ✗re-ask before then. Build continues; CONTENT_POLICY.md stays draft.

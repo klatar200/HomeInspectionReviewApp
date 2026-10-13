@@ -90,7 +90,4 @@ Steps (each has a binary check):
 - [ ] S9 Tests: dedupe, idempotency, radius math vs known pair, discipline rendered verbatim, cross-user claim probe→404, zip never in API response.
 
 ## Open questions
-Q-1 Social media (D-019): which platform first, account owner, content type? First-reviewer sourcing without local contacts. ($0.)
-Q-2 Counsel (D-021): who + cost? Decide before finalizing CONTENT_POLICY.
-Q-3 Dispute rules PROPOSED in CONTENT_POLICY §5 (keep-visible-during-review, response clocks, removal grounds) — confirm or edit before sending to counsel.
-Q-4 Builder identity: claim by company-email domain OK as v1 verification? (rec: yes).
+(none blocking. Deferred to near launch, D-027: Facebook account/owner, counsel choice+cost, first-reviewer sourcing.)
