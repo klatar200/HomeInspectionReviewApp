@@ -68,6 +68,16 @@ W6 Inspector/builder dashboard: claimed profile edit (booking URL, bio, company 
 W8 Challenge flow: reviewed party picks reason → statement/evidence → submit → reviewer notified + can respond → moderator decision shown on review (kept / removed / annotated) with reason code.
 W7 Admin moderation queue: pending reviews/flags, open challenges (oldest first, clock shown), evidence viewer, remove/restore/annotate w/ reason, takedown inbox.
 
+## Iron out BEFORE coding (audit 2026-10-13; see chat audit; owners: agent unless noted)
+- [ ] T1 Trust model 1-pager: tiers unverified / report-attached / inspector-invited; which numbers are self-reported vs file-backed; min-n display thresholds; "report attached" abuse checks (PDF only, hash dedupe, moderator spot-check).
+- [ ] T2 Decide D-040 (Google/Yelp stat) — Keagan.
+- [ ] T3 Rendering spike: public profile/builder pages must be indexable; current scaffold = Vite SPA. Compare Next.js vs Vite+prerender/SSR; check $0 commercial hosting terms.
+- [ ] T4 $0 infra picks (research): transactional email for magic links, private file storage, upload virus scan, bot protection, rate limits, backups.
+- [ ] T5 Privacy/retention design: uploaded reports contain homeowner PII; retention, deletion, access logging.
+- [ ] T6 Slice MVP: M1 inspector directory+accounts+inspector reviews+moderation+challenges · M2 builders/communities/builder reviews · M3 sample reports, second-opinion, flags.
+- [ ] T7 Cheap Illinois demand check (zero local evidence, D-032): desk research of public complaints/forums + short survey in Facebook groups BEFORE heavy build. Gate proposal: ≥N respondents confirming problem (N=Keagan's call).
+Low-regret work that may start before T1–T7: IDFPR sync pipeline (S1–S5), ZIP radius search, Inspector/LicenseDiscipline schema.
+
 ## Phases (each ends w/ binary check)
 - [x→DRAFT] P0b CONTENT_POLICY.md draft exists (counsel packet). TODO: Keagan picks lawyer+confirms cost (D-021); incorporate counsel feedback; finalize. LAUNCH BLOCKER (G2).
 - [ ] P1 Schema+API: Prisma models, ZipCentroid import, radius search endpoint, auth (magic-link), authz tests (cross-user probe→404).
