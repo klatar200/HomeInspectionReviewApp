@@ -63,7 +63,6 @@ W8 Challenge flow: reviewed party picks reason → statement/evidence → submit
 W7 Admin moderation queue: pending reviews/flags, open challenges (oldest first, clock shown), evidence viewer, remove/restore/annotate w/ reason, takedown inbox.
 
 ## Phases (each ends w/ binary check)
-- [ ] P0 Foundations: monorepo (web/api), CI (lint+typecheck+test), docker-compose Postgres local ($0). Check: CI green, `npm test` passes.
 - [x→DRAFT] P0b CONTENT_POLICY.md draft exists (counsel packet). TODO: Keagan picks lawyer+confirms cost (D-021); incorporate counsel feedback; finalize. LAUNCH BLOCKER (G2).
 - [ ] P1 Schema+API: Prisma models, ZipCentroid import, radius search endpoint, auth (magic-link), authz tests (cross-user probe→404).
 - [ ] P2 Web: W1,W2,W3 end-to-end locally. Check: seeded inspector → review submit → appears after moderation.

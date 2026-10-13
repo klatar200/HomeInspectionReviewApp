@@ -1,0 +1,2 @@
+# SHIPPED (PAST; append-only)
+2026-10-13 P0 Foundations: npm-workspaces monorepo (apps/api Fastify+TS /health; apps/web Vite+React+TS), ESLint9+typescript-eslint, Vitest 5 (api 2 tests, web 1 test), tsconfig.base strict, docker-compose Postgres 16 (dev-only creds, .env.example), GitHub Actions CI (npm ci→lint→typecheck→test→build). Local `npm run check` green; npm audit 0 vulns. Decisions: D-024..D-026. Remote CI result: see next entry.

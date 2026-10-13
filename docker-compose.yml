@@ -1,0 +1,14 @@
+# Local dev database only ($0). Credentials are dev-only placeholders.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: inspec
+      POSTGRES_PASSWORD: inspec_dev_only
+      POSTGRES_DB: inspec
+    ports:
+      - "5432:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+volumes:
+  dbdata:
