@@ -1,7 +1,10 @@
 # PLAN — Inspec (working title, D-017) (FUTURE only; checkboxes; shipped work → SHIPPED.md when exists). Decisions: DECISIONS.md. Research: RESEARCH.md.
 
 ## Product
-Review + discovery site for residential home inspectors within 50mi of Plainfield IL (D-015), first audience=new-build buyers. Reviews can target an inspector OR a builder (D-023); reviewed party can challenge, decided case-by-case. Differentiators: structured/evidence-backed reviews; builder-conflict flags (evidence-only, D-008); private second-opinion comparison. ✗pay-to-rank EVER (D-007).
+Review + discovery site for residential home inspectors within 50mi of Plainfield IL (D-015), first audience=new-build buyers. Reviews can target an inspector OR a builder (D-023); reviewed party can challenge, decided case-by-case. Headline trust signal = transparent evidence counts, stars secondary (D-028). Differentiators: structured/evidence-backed reviews; builder-conflict flags (evidence-only, D-008); private second-opinion comparison. ✗pay-to-rank EVER (D-007).
+
+## Design notes
+Primary entry = post-burn users (D-030). Builder due-diligence beyond reviews (deposit loss, litigation) NOT in scope pending D-031.
 
 ## Scope v1 (IN)
 inspector directory+profiles · radius search · accounts (email magic-link) · reviews of inspectors AND builders (structured+text) · report/evidence upload · builder pages (user-created, admin-merged) + builder claim · evidence-backed flags · inspector claim flow (self-declared company, D-020) · challenge/dispute flow · booking link-out · moderation queue · takedown/dispute form · written content policy.
@@ -29,13 +32,13 @@ W1 Home/Search
 Find a home inspector near you
 [ ZIP 60544 ] [ 25 mi v ] [ New-build experience v ] [Search]
 -- Results (sorted: reviews+evidence, ✗paid) ---------------
-| Name · Co.   ★4.8 (12)  [report-attached 8]   License: Active(checked 10/13) |
+| Name · Co.   12 reviews · 8 with report · avg 4.5h on site · ★4.8   License: Active(checked 10/13) |
 | 9.2 mi · New-build ✓ · [View] [Book ↗]                                        |
 ```
 W2 Inspector profile
 ```
 Name · Co.  License #### Active (checked date)   [Book ↗ (external)]
-★4.8 | 12 reviews | 8 with report | Avg hours on site 4.5
+12 reviews | 8 with report | Avg hours on site 4.5 | Avg items found n | ★4.8 (secondary)
 Builders they've inspected: [Builder A (5)] [Builder B (2)]
 Tabs: Reviews | About | Service area
 Review card: ★ · type · date · [report attached]/[unverified] · body · [Report problem]
