@@ -56,3 +56,15 @@ OPEN (UNVERIFIED): ILASHI/InterNACHI member directory terms for contact enrichme
 - Yelp: Places API plans listed $229/mo (Base), $299/mo (Enhanced, 30-day 5,000-call trial "not for commercial deployment"), Premium $643/mo (https://business.yelp.com/data/resources/pricing/ ); 24h caching limit reported by a 3rd party (UNVERIFIED). Aggregate-rating rules NOT FOUND. ⇒ conflicts with $0 rule (D-010/CLAUDE.md).
 - Scraping Google/Yelp = ToS breach (Apify-style scrapers exist) ✗use.
 - Roommates.com (9th Cir. 2008, en banc): site lost §230 immunity for content it developed via REQUIRED drop-down questions that were themselves unlawful; open-ended fields stayed immune; en banc stressed that menus/search alone ≠ loss of immunity. Cite per secondary sources (https://www.rcfp.org/court-says-web-site-not-immune-under-section-230/ ); citation unverified. ⇒ DESIGN CAUTION for D-033/D-038: app-designed structured status/outcome fields + app-computed counts about a named builder could be argued as site-developed content. Counsel question (CONTENT_POLICY Q15).
+
+## §9 Illinois demand check — desk research (AS-OF 2026-10-13; D-044; 4 searches, secondary sources)
+SUPPORTED (Illinois, general):
+- Illinois AG 2023 complaint report: Construction/Home Improvement = #1 category, 2,091 complaints; incl. "failure to conduct work after receiving a down payment" and quality dissatisfaction (https://news.wttw.com/2024/03/08/here-are-top-10-consumer-complaints-illinois-2023 ). Category is mostly home improvement, ✗new-build specific.
+- AG enforcement history: 2007 suit vs Cook County developers (39 homes uncompleted; $250,000 in down payments, per AG press archive https://illinoisattorneygeneral.gov/News-Room/2006-2018-Press-Archive/200709-04%20Madigan%20Sues%20Cook%20County%20Developers.pdf ); 2006 DuPage contractor suit (liens). Old but same harm class as builder non-performance. AG has a Home Repair and Construction Task Force.
+- New-home defect disputes + builders refusing warranty claims are routine topics for Chicago-area construction-defect firms (e.g. https://www.lawkeller.com/common-construction-disputes-that-occur-in-the-state-of-illinois/ ). IL limits (per firm blogs, UNVERIFIED): 4yr limitations from discovery, 10yr repose.
+NOT SUPPORTED / WEAK:
+- Builder steering to own inspector in Illinois: NO Illinois source found. Only an inspector's NACHI forum post claiming some builders discourage buyer inspections via time-window rules (anecdote, location unstated).
+- Builder access restriction: forum anecdotes from Irvine, CA (Pulte/others) ✗Illinois; plus CyFy/AZ (RESEARCH §1).
+- Illinois law on builder-restricted pre-closing inspection: not found (RESEARCH §3).
+- Reddit/Facebook first-hand Illinois accounts: not reachable via this search tool.
+VERDICT: builder non-performance/defect disputes in Illinois = plausible & documented generally; inspector-steering/access-restriction in Illinois = UNPROVEN. Desk research cannot settle it ⇒ survey (Facebook groups, after account exists) remains the real test. Proposed threshold (D-044): ≥20 IL new-build respondents, ≥50% report a builder or inspector problem — Keagan to confirm.
