@@ -18,3 +18,8 @@ D-015 2026-10-13 DECIDED default search radius=50mi from Plainfield 60544 (super
 D-016 2026-10-13 DECIDED no known local new-build contacts. Validation interviews + marketing channel = OPEN (Keagan: marketing undecided).
 D-017 2026-10-13 DECIDED working title="Inspec". Public branding NOT final; ✗domain/trademark checks done.
 D-018 2026-10-13 DECIDED accounts required to post reviews (email magic-link).
+D-019 2026-10-13 DECIDED first marketing channel=social media (platform/accounts/content OPEN). Closes Q-1 channel only; first-reviewer sourcing still OPEN. Spend=$0 until opt-in.
+D-020 2026-10-13 DECIDED company link=inspector self-declares company on their claimed profile (labelled "self-reported"); no admin entity↔individual matching. Supersedes PLAN Q-3. Downside: false company claims ⇒ claim review checks license ownership only; company text is ✗verified.
+D-021 2026-10-13 DECIDED legal review approved in principle: ≈1 hour consult, Keagan to choose counsel + confirm cost (spend ⇒ his decision). Packet=CONTENT_POLICY.md (exists, draft v0.1) (draft + questions for counsel). Launch still blocked until policy finalized (G2).
+D-022 2026-10-13 DECIDED "Inspec" = working brand name (reaffirms D-017; no domain/trademark check yet).
+D-023 2026-10-13 DECIDED reviews may target EITHER an inspector OR a builder. Reviewed party may challenge; each challenge decided case-by-case by a human moderator. D-008 stands for BuilderFlags (evidence-required structured records); builder REVIEWS are experience-based and need no file. Risk accepted knowingly: builder reviews on honor system = highest defamation/litigation surface; solo-moderator queue does not scale; a builder with counsel can flood challenges. Mitigations PROPOSED in CONTENT_POLICY.md §5.
