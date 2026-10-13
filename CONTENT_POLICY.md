@@ -18,6 +18,7 @@ Inspec does not suggest or require accusations. Review prompts are neutral by de
 
 ## 4. Evidence and uploads
 - Uploads (photos, report pages, contract pages) must be the uploader's to share. Reports may contain the inspector's work product; the reviewer is responsible for having the right to share it.
+- Copyright takedowns (PROPOSED, D-048): on a valid notice we remove promptly, tell the uploader, accept a counter-notice, and restore after 10–14 business days unless the claimant sues. Repeat infringers lose upload rights. Full reports stay private to the owner; public posts are own photos + short excerpts.
 - Builder FLAGS (structured records such as "restricted inspector access") require at least one evidence file and show the evidence, not an Inspec verdict.
 
 ## 5. Challenges (PROPOSED — confirm or edit)
@@ -54,3 +55,8 @@ No paid placement and no pay-to-rank, ever. Profiles are free. [PLAN D-007]
 13. Structured builder-review status fields (home delivered / delayed / construction not started / contract cancelled; stage): are these neutral enough under the Section 230 participation concern, and are there wording changes you'd advise?
 14. Inspector-provided sample reports: copyright/ownership, client-PII redaction duty, and how to label so it is not mistaken for a real client report.
 15. Structured outcome/status fields and app-computed counts about named builders and inspectors (e.g., "inspection-reported items addressed: none", "inspector access: restricted"): does designing these fields and showing counts make Inspec a content developer under Section 230 (cf. Roommates.com)? Is a minimum-reviews threshold and a "reported by reviewers" label enough? Also: any terms issues linking to or displaying Google/Yelp ratings?
+16. Posting excerpts of an inspector's report: inspection agreements vary (InterNACHI template: client owns the report but indemnifies the inspector if a third party who relied on it sues; other forms: inspector owns it). What attestation wording and excerpt limits do you advise? Does the Consumer Review Fairness Act / 815 ILCS 505/2UUU protect posting report content about a builder (not the inspector)?
+17. DMCA: counter-notice handling, repeat-infringer policy wording, and what to do with non-copyright demands (contract, defamation, privacy) from an inspector or builder. Is our "human-decided, keep visible unless facially violating" approach safe for those?
+18. Public-record display (v2): fair-report privilege in Illinois (Solaia) — what format keeps us inside it (pointer + verbatim docket text + link)? Risk of entity mismatches (LLC names); duty to update when a case resolves.
+19. Users bound by builder NDAs or settlement non-disparagement clauses (e.g., Ryan Homes/NVR, Utah examples in RESEARCH §10): what do we require of reviewers, and what do we do when a builder cites an NDA in a challenge?
+20. Municipal FOIA results (permits, failed inspections, violations) as a data source: any limits on republishing, and does a commercial-purpose request change our obligations?
