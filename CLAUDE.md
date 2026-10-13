@@ -1,5 +1,5 @@
 # CLAUDE.md — constraints (agent-parse; read order: CLAUDE.md → PLAN.md → DECISIONS.md → RESEARCH.md)
-- Project: home-inspector review/discovery app, Plainfield IL radius, new-build buyers first. Owner: Keagan. Global prefs apply (short replies, $0, commit only when asked).
+- Project: home-inspector review/discovery app, Inspec (working title), Plainfield IL 50mi radius, new-build buyers first, commit direct to main (D-013). Owner: Keagan. Global prefs apply (short replies, $0; commit to main once Keagan asks for work to be saved, D-013).
 - INVARIANTS: ✗pay-to-rank/paid placement ever (D-007) · builder flags need ≥1 evidence file (D-008) · second-opinion data private to owner (D-005) · identity from session only, cross-user probe→404 · ✗leading review prompts (Sec.230 participation risk, RESEARCH §4) · ✗app-authored accusations vs builders/inspectors; show submitted evidence, ✗verdicts · ✗legal assertions in UI copy without counsel (none available, D-009) · public launch blocked until CONTENT_POLICY exists (PLAN G2).
 - Volatile facts carry AS-OF; >90d ⇒ re-verify. Decisions append-only (DECISIONS.md).
 - Stack: React/TS · Fastify · Prisma/Postgres. Local dev via docker-compose; no paid services w/o Keagan opt-in.
