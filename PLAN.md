@@ -76,6 +76,7 @@ W7 Admin moderation queue: pending reviews/flags, open challenges (oldest first,
 - [ ] T5 Privacy/retention design: uploaded reports contain homeowner PII; retention, deletion, access logging.
 - [ ] T6 Slice MVP: M1 inspector directory+accounts+inspector reviews+moderation+challenges · M2 builders/communities/builder reviews · M3 sample reports, second-opinion, flags.
 - [ ] T7 Cheap Illinois demand check (zero local evidence, D-032): desk research of public complaints/forums + short survey in Facebook groups BEFORE heavy build. Gate proposal: ≥N respondents confirming problem (N=Keagan's call).
+- [ ] T8 Verify Illinois Home Inspector License Act sunset (2027-01-01) / extension bills HB5428, SB3897 (RESEARCH §10a). Blocks finalizing IDFPR-based wording; seed pipeline still low-regret.
 Low-regret work that may start before T1–T7: IDFPR sync pipeline (S1–S5), ZIP radius search, Inspector/LicenseDiscipline schema.
 
 ## Phases (each ends w/ binary check)
