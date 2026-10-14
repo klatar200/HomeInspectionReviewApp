@@ -91,7 +91,7 @@ Low-regret work that may start before T1–T7: IDFPR sync pipeline (S1–S5), ZI
 - [ ] P8 Deploy ($0 stack verified ToS-for-commercial-use first; D-010) + pilot.
 
 ## Gates (PROPOSED, NOT AGREED — D-012; agent restates every check-in)
-G1 P2 end-to-end locally working. G2 CONTENT_POLICY written + takedown flow live (blocks public launch). G3 pilot: ≥10 CLAIMED inspector profiles AND ≥25 reviews within 90d of launch (seeding alone ≈1169 profiles, ✗counts), else stop-or-pivot decision. Sunk cost ≠ evidence.
+G1 P2 end-to-end locally working. G2 CONTENT_POLICY written + takedown flow live + DMCA agent registered (D-045) (blocks public launch). G3 pilot: ≥10 CLAIMED inspector profiles AND ≥25 reviews within 90d of launch (seeding alone ≈1169 profiles, ✗counts), else stop-or-pivot decision. Sunk cost ≠ evidence.
 
 ## Seed plan (D-014; facts+risks: RESEARCH §5)
 Goal: ≈1169 active individual + 116 entity IDFPR licensees within 50mi preloaded as UNCLAIMED, license-facts-only profiles. $0.
